@@ -1,5 +1,6 @@
 var config = require('../config/config');
 var database = require('./dbController');
+var lib = require('./libController');
 //Set Session and check the Environment of the Application
 var sessionOptions = {
     httpOnly: true,
@@ -8,7 +9,7 @@ var sessionOptions = {
 
 exports.register  = function(req, res, next) {
     var values = _.merge(req.body, { user: {} });
-    var recaptcha = lib.removeNullsAndTrim(req.body['g-recaptcha-response']);
+    //var recaptcha = lib.removeNullsAndTrim(req.body['g-recaptcha-response']);
     var username = lib.removeNullsAndTrim(values.user.name);
     var password = lib.removeNullsAndTrim(values.user.password);
     var password2 = lib.removeNullsAndTrim(values.user.confirm);
