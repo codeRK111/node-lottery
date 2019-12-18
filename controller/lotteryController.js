@@ -13,19 +13,12 @@ RESPONSE: GAMEID, GAMENAME, GAMETYPE, GAMEPRICE, WINNINGFEATURES
 exports.getGame = function(req,res) => {
     
 };
-/*
-POST: USERID
-RESPONSE: GAMEID, GAMENAME, GAMEPRICE, GAMETYPE, USERNAME
-*/
-exports.getUserBid = function(req,res) => {
-    
-};
 
 
 /*
-POST: USERID, GAMEID
-RESPONSE: TRUE/FALSE
+POST:  GAMEID
+RESPONSE: playerid, playername, pricewon, timeago
 */
-exports.setUserBid = function(req,res) => {
+exports.getgameHistory = function(req,res) => {
     
 };

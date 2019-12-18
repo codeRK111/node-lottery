@@ -272,3 +272,14 @@ exports.joinGame = function(userId, ipAddress, userAgent,game_id,callback) {
         callback(null, game.id);
     });
 };
+
+exports.getGameHistory = function(gameId,limit, callback){
+    assert(typeof gameId === 'number');
+    assert(typeof limit === 'number');
+    var sql = "SELECT u.userid as playerid, u.username as playername, p.wonprice as pricewon, timeago FROM users u join plays p ON users.id = plays.user_id WHERE p.gameId = $1 ORDER BY p.gameId DESC LIMIT $2";
+    query(sql, [gameId, limit], function(err, data) {
+        if(err)
+            return callback(err);
+        callback(null, data.rows);
+    });
+};

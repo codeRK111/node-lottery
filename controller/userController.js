@@ -117,3 +117,27 @@ exports.logout = function(req, res, next) {
         res.redirect('/');
     });
 };
+/*
+POST: USERID
+RESPONSE: GAMEID, GAMENAME, GAMEPRICE, GAMETYPE, USERNAME
+*/
+exports.getUserBid = function(req,res) => {
+    
+};
+
+
+/*
+POST: USERID, GAMEID
+RESPONSE: TRUE/FALSE
+*/
+exports.setUserBid = function(req,res) => {
+    
+};
+
+exports.getUserLuck = function(req, res){
+    
+}
+
+exports.getUserXP = function(req, res){
+    
+}
