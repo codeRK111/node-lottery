@@ -1,6 +1,8 @@
 var config = require('../config/config');
 var database = require('./dbController');
 var lib = require('./libController');
+var assert = require('better-assert');
+var async = require('async');
 //Set Session and check the Environment of the Application
 var sessionOptions = {
     httpOnly: true,
