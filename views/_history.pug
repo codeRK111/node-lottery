@@ -1,0 +1,62 @@
+.flex-center
+     .row(style="width: 60vw;")
+          .col-3
+               #v-pills-tab.nav.flex-column.nav-pills(role="tablist" aria-orientation="vertical")
+                    a#v-pills-home-tab.nav-link.active(data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true") Free
+                    a#v-pills-profile-tab.nav-link(data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false") Starter
+                    a#v-pills-messages-tab.nav-link(data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false") Professional
+                    a#v-pills-settings-tab.nav-link(data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false") Enterprise
+          .col-9
+               #v-pills-tabContent.tab-content
+                    #v-pills-home.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="v-pills-home-tab")
+                         ul#myTab.nav.nav-tabs(role="tablist")
+                              li.nav-item
+                                   a#home-tab.nav-link.active(data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true") Now playing
+                              li.nav-item
+                                   a#profile-tab.nav-link(data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false") History
+                         #myTabContent.tab-content
+                              #home.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="home-tab")
+                                   | ...
+                              #profile.tab-pane.fade(role="tabpanel" aria-labelledby="profile-tab")
+                                   | ...
+                              #contact.tab-pane.fade(role="tabpanel" aria-labelledby="contact-tab")
+                                   | ...
+                    #v-pills-profile.tab-pane.fade(role="tabpanel" aria-labelledby="v-pills-profile-tab")
+                         ul#myTab.nav.nav-tabs(role="tablist")
+                              li.nav-item
+                                   a#home-tab.nav-link.active(data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true") Now playing
+                              li.nav-item
+                                   a#profile-tab.nav-link(data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false") History
+                         #myTabContent.tab-content
+                              #home.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="home-tab")
+                                   | ...
+                              #profile.tab-pane.fade(role="tabpanel" aria-labelledby="profile-tab")
+                                   | ...
+                              #contact.tab-pane.fade(role="tabpanel" aria-labelledby="contact-tab")
+                                   | ...
+                    #v-pills-messages.tab-pane.fade(role="tabpanel" aria-labelledby="v-pills-messages-tab")
+                         ul#myTab.nav.nav-tabs(role="tablist")
+                              li.nav-item
+                                   a#home-tab.nav-link.active(data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true") Now Playing
+                              li.nav-item
+                                   a#profile-tab.nav-link(data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false") History
+                         #myTabContent.tab-content
+                              #home.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="home-tab")
+                                   | ...
+                              #profile.tab-pane.fade(role="tabpanel" aria-labelledby="profile-tab")
+                                   | ...
+                              #contact.tab-pane.fade(role="tabpanel" aria-labelledby="contact-tab")
+                                   | ...
+                    #v-pills-settings.tab-pane.fade(role="tabpanel" aria-labelledby="v-pills-settings-tab")
+                         ul#myTab.nav.nav-tabs(role="tablist")
+                              li.nav-item
+                                   a#home-tab.nav-link.active(data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true") Now Playing
+                              li.nav-item
+                                   a#profile-tab.nav-link(data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false") History
+                         #myTabContent.tab-content
+                              #home.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="home-tab")
+                                   | ...
+                              #profile.tab-pane.fade(role="tabpanel" aria-labelledby="profile-tab")
+                                   | ...
+                              #contact.tab-pane.fade(role="tabpanel" aria-labelledby="contact-tab")
+                                   | ...

@@ -1,0 +1,48 @@
+#user-profile-2.user-profile
+  .tabbable
+    ul.nav.nav-tabs.padding-18
+      li.active
+        a(data-toggle='tab' href='#home')
+          i.green.ace-icon.fa.fa-user.bigger-120
+          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Profile
+    .tab-content.no-border.padding-24
+      #home.tab-pane.in.active
+        .row
+          .col-xs-12.col-sm-3.center
+            span.profile-picture
+              img#avatar2.editable.img-responsive(alt=' Avatar' src='http://bootdey.com/img/Content/avatar/avatar6.png')
+            .space.space-4
+            a.btn.btn-sm.btn-block.btn-primary(href='#')
+              i.ace-icon.fa.fa-envelope-o.bigger-110
+              span.bigger-110 Send a message
+          // /.col
+          .col-xs-12.col-sm-9
+            h4.blue
+              span.middle John Doe
+              span.label.label-purple.arrowed-in-right
+                i.ace-icon.fa.fa-circle.smaller-80.align-middle
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;online
+            .profile-user-info
+              .profile-info-row
+                .profile-info-name  Username 
+                .profile-info-value
+                  span alexdoe
+              .profile-info-row
+                .profile-info-name  Location 
+                .profile-info-value
+                  i.fa.fa-map-marker.light-orange.bigger-110
+                  span Netherlands
+                  span Amsterdam
+              .profile-info-row
+                .profile-info-name  Age 
+                .profile-info-value
+                  span 38
+              .profile-info-row
+                .profile-info-name  Joined 
+                .profile-info-value
+                  span 2010/06/20
+            // /.col
+          // /.row
+          .space-20
+          .row
+            .col-xs-12.col-sm-6
